@@ -1,8 +1,8 @@
 {
-  "name" : "social media time counter",
+  "name" : "yapma - zamanını boşa harcama",
   "author": "Furkan BAŞARAN",
-  "short_name": "social timer",
-  "description" : "limit yourself on social media",
+  "short_name": "yapma",
+  "description" : "sosyal medya zaman kaybı önleyici",
   "version" : "1.0.0",
   "permissions": ["https://www.facebook.com/*", "https://twitter.com/*","https://instagram.com/*","https://eksisozluk.com/*"],
   "manifest_version" : 2,

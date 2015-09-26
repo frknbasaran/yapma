@@ -1,5 +1,5 @@
 (function () {
-  var forbiddenAreas = ["www.facebook.com", "facebook.com", "twitter.com", "instagram.com", "eksisozluk.com", "github.com"];
+  var forbiddenAreas = ["www.facebook.com", "facebook.com", "twitter.com", "tweetdeck.twitter.com", "instagram.com", "eksisozluk.com", "github.com"];
   var timer = 0;
 
   var checkLocation = function (callback) {

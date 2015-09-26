@@ -9,7 +9,11 @@
     "*://*.twitter.com/*",
     "*://*.instagram.com/*",
     "*://*.eksisozluk.com/*",
-    "*://*.github.com/*"
+    "*://*.github.com/*",
+    "*://*.4chan.org/*",
+    "*://*.reddit.com/*",
+    "*://*.twitch.tv/*",
+    "*://*.youtube.com/*"
   ],
   "manifest_version": 2,
   "icons": {
@@ -26,7 +30,9 @@
         "*://*.eksisozluk.com/*",
         "*://*.github.com/*",
         "*://*.4chan.org/*",
-        "*://*.reddit.com/*"
+        "*://*.reddit.com/*",
+        "*://*.twitch.tv/*",
+        "*://*.youtube.com/*"
       ],
       "js": ["src/app.js"]
     }

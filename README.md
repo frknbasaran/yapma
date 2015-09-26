@@ -14,9 +14,11 @@ Aşağıdaki sitelerde 10 dakikadan fazla zaman geçirdiğiniz zaman sizi entere
 ![Logo](http://oi60.tinypic.com/fjnk2w.jpg)
 
 7 dakika sonra
+
 ![Logo](http://i59.tinypic.com/2mzzij4.png)
 
 9 dakika sonra
+
 ![Logo](http://i62.tinypic.com/9fwgsi.png)
 
 10 dakika sonra günah benden gidiyor.

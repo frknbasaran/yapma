@@ -15,7 +15,7 @@
 
   var notify = function (messageText) {
     var options = {
-      icon: "https://raw.githubusercontent.com/frknbasaran/yapma/master/assert/128-icon.png"
+      icon: "https://raw.githubusercontent.com/frknbasaran/yapma/master/assets/128-icon.png"
     };
     // Let's check if the browser supports notifications
     if (!("Notification" in window)) {

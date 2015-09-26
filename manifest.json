@@ -24,7 +24,9 @@
         "*://*.twitter.com/*",
         "*://*.instagram.com/*",
         "*://*.eksisozluk.com/*",
-        "*://*.github.com/*"
+        "*://*.github.com/*",
+        "*://*.4chan.org/*",
+        "*://*.reddit.com/*"
       ],
       "js": ["src/app.js"]
     }

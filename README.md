@@ -25,5 +25,5 @@ Aşağıdaki sitelerde 10 dakikadan fazla zaman geçirdiğiniz zaman sizi entere
 
 Don't Worry, Safe for Work.
 
-[Link](https://chrome.google.com/webstore/detail/kobdknbldcgchenddoejldigbdkholke)
+[Chrome Web Store Bağlantısı](https://chrome.google.com/webstore/detail/kobdknbldcgchenddoejldigbdkholke)
 

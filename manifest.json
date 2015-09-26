@@ -1,0 +1,29 @@
+{
+  "name" : "social media time counter",
+  "author": "Furkan BAŞARAN",
+  "short_name": "social timer",
+  "description" : "limit yourself on social media",
+  "version" : "1.0.0",
+  "permissions": ["https://www.facebook.com/*", "https://twitter.com/*","https://instagram.com/*","https://eksisozluk.com/*"],
+  "manifest_version" : 2,
+  "icons": {
+    "16": "assert/32-icon.png",
+    "48": "assert/64-icon.png",
+    "128": "assert/128-icon.png"
+  },
+  "content_scripts" :  [
+    {
+      "matches" : [
+        "http://www.facebook.com/*",
+        "https://twitter.com/*",
+        "https://instagram.com/*",
+        "https://eksisozluk.com/*"
+      ],
+      "js" : ["src/app.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "config/*.json"
+  ],
+  "offline_enabled": false
+}

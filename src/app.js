@@ -48,22 +48,40 @@
 
     // At last, if the user already denied any notification, and you
     // want to be respectful there is no need to bother him any more.
+
+    return notification;
   };
+
+  var hideNot=function(notf){
+    setTimeout(function(){
+      notf.close()
+    },3000)
+  };
+
+  // Hides the notification popup after 3 mins, so it prevents piling 
+  // up of the popup windows.
 
   checkLocation(function (is) {
     if (is) {
       setInterval(function () {
+        var n;
         timer++;
         if (timer == 300) {
-          notify("5 dakikadır zaman katlediyorsun");
+          n=notify("5 dakikadır zaman katlediyorsun");
         } else if (timer == 420) {
-          notify("7 dakika oldu, son 3 dakikan var");
+          n=notify("7 dakika oldu, son 3 dakikan var");
         } else if (timer == 540) {
-          notify("günah benden gidiyor");
+          n=notify("günah benden gidiyor");
         } else if (timer == 600) {
           window.location.href = "http://img-9gag-fun.9cache.com/photo/aGRAzVZ_460sv.mp4";
         }
+        hideNot(n);
       }, 1000);
     }
   });
+
+  
+
 })();
+
+

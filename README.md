@@ -8,6 +8,8 @@ Aşağıdaki sitelerde 10 dakikadan fazla zaman geçirdiğiniz zaman sizi entere
   - twitter.com
   - instagram.com
   - eksisozluk.com
+  - ok.ru
+  - vk.com
 
 5 dakika sonra
 

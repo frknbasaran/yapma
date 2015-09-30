@@ -9,13 +9,17 @@
     "*://*.twitter.com/*",
     "*://*.instagram.com/*",
     "*://*.eksisozluk.com/*",
-    "*://*.github.com/*"
+    "*://*.github.com/*",
+    "*://*.4chan.org/*",
+    "*://*.reddit.com/*",
+    "*://*.twitch.tv/*",
+    "*://*.youtube.com/*"
   ],
   "manifest_version": 2,
   "icons": {
-    "16": "assert/32-icon.png",
-    "48": "assert/64-icon.png",
-    "128": "assert/128-icon.png"
+    "16": "assets/32-icon.png",
+    "48": "assets/64-icon.png",
+    "128": "assets/128-icon.png"
   },
   "content_scripts": [
     {
@@ -24,7 +28,11 @@
         "*://*.twitter.com/*",
         "*://*.instagram.com/*",
         "*://*.eksisozluk.com/*",
-        "*://*.github.com/*"
+        "*://*.github.com/*",
+        "*://*.4chan.org/*",
+        "*://*.reddit.com/*",
+        "*://*.twitch.tv/*",
+        "*://*.youtube.com/*"
       ],
       "js": ["src/app.js"]
     }

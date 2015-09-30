@@ -1,5 +1,5 @@
 (function () {
-  var forbiddenAreas = ["www.facebook.com", "facebook.com", "twitter.com", "tweetdeck.twitter.com", "instagram.com", "eksisozluk.com", "github.com"];
+  var forbiddenAreas = ["www.facebook.com", "facebook.com", "twitter.com", "tweetdeck.twitter.com", "instagram.com", "eksisozluk.com", "github.com","4chan.org","reddit.com","twitch.tv","youtube.com"];
   var timer = 0;
 
   var checkLocation = function (callback) {
@@ -15,7 +15,7 @@
 
   var notify = function (messageText) {
     var options = {
-      icon: "https://raw.githubusercontent.com/frknbasaran/yapma/master/assert/128-icon.png"
+      icon: "https://raw.githubusercontent.com/frknbasaran/yapma/master/assets/128-icon.png"
     };
     // Let's check if the browser supports notifications
     if (!("Notification" in window)) {

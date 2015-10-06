@@ -8,6 +8,7 @@ Aşağıdaki sitelerde 10 dakikadan fazla zaman geçirdiğiniz zaman sizi entere
   - twitter.com
   - instagram.com
   - eksisozluk.com
+  - tweetdeck.twitter.com
 
 5 dakika sonra
 

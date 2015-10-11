@@ -1,7 +1,7 @@
 (function () {
   var forbiddenAreas = ["www.facebook.com", "facebook.com", "twitter.com", "tweetdeck.twitter.com", "instagram.com", "eksisozluk.com", "github.com"];
   var timer = 0;
-
+  var notification;
   var checkLocation = function (callback) {
     var currentLocation = window.location.hostname;
     var isForbidden = false;
@@ -25,7 +25,7 @@
     // Let's check if the user is okay to get some notification
     else if (Notification.permission === "granted") {
       // If it's okay let's create a notification
-      var notification = new Notification(messageText, options);
+       notification = new Notification(messageText, options);
     }
 
     // Otherwise, we need to ask the user for permission
@@ -41,7 +41,7 @@
 
         // If the user is okay, let's create a notification
         if (permission === "granted") {
-          var notification = new Notification(messageText, options);
+           notification = new Notification(messageText, options);
         }
       });
     }
@@ -55,16 +55,16 @@
   var hideNot=function(notf){
     setTimeout(function(){
       notf.close()
-    },3000)
+    },5000)
   };
 
   // Hides the notification popup after 3 mins, so it prevents piling 
   // up of the popup windows.
 
   checkLocation(function (is) {
+    var n;
     if (is) {
       setInterval(function () {
-        var n;
         timer++;
         if (timer == 300) {
           n=notify("5 dakikadır zaman katlediyorsun");
@@ -75,7 +75,10 @@
         } else if (timer == 600) {
           window.location.href = "http://img-9gag-fun.9cache.com/photo/aGRAzVZ_460sv.mp4";
         }
-        hideNot(n);
+
+        if(n!=undefined&&n!=null){        
+          hideNot(n);
+        }
       }, 1000);
     }
   });

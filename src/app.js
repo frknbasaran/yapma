@@ -2,12 +2,51 @@
   var forbiddenAreas = ["www.facebook.com", "facebook.com", "twitter.com", "tweetdeck.twitter.com", "instagram.com", "eksisozluk.com", "github.com"];
   var timer = 0;
 
+  // Prefixes for localStorage items
+  var preArea = "yapma_area_";
+  var preTime = "yapma_times_";
+
+  // It means, the maximum difference between current time and session start time can be less than 30 minutes.
+  var maxDiff = 1800000;
+
   var checkLocation = function (callback) {
     var currentLocation = window.location.hostname;
+    var currentPath = window.location.pathname;
     var isForbidden = false;
 
     forbiddenAreas.forEach(function (val, key) {
       isForbidden = (isForbidden) ? isForbidden : (currentLocation == forbiddenAreas[key]) ? true : false;
+
+      if(currentLocation == forbiddenAreas[key] && currentPath == "/"){
+        var startTime = localStorage.getItem(preArea + forbiddenAreas[key]);
+        if(startTime != undefined){
+          var currentTime = Date.now();
+          if(currentTime - startTime > maxDiff){
+            // Add the current hostname to the localStorage visit times
+            localStorage.setItem((preArea + forbiddenAreas[key]), Date.now());
+            localStorage.setItem((preTime + forbiddenAreas[key]), 1);
+          }
+          else {
+            var times = parseInt(localStorage.getItem((preTime + forbiddenAreas[key]))) + 1;
+            localStorage.setItem((preTime + forbiddenAreas[key]), times);
+            // Check for the visit times exceeded to maximum
+            if(times > 5 && times < 10){
+              var n = notify("hobaaa, son yarım saatte bu sayfaya " + times + ". kere geldin.");
+              hideNot(n);
+            }
+            else if(times == 10){
+              var n = notify("ben artık uyarmıyorum seni.");
+              hideNot(n);
+            }
+          }
+        }
+        else {
+          // Set the counters to default and refresh session time
+          localStorage.setItem((preArea + forbiddenAreas[key]), Date.now());
+          localStorage.setItem((preTime + forbiddenAreas[key]), 1);
+        }
+      }
+
     });
 
     callback(isForbidden);
@@ -58,7 +97,7 @@
     },3000)
   };
 
-  // Hides the notification popup after 3 mins, so it prevents piling 
+  // Hides the notification popup after 3 mins, so it prevents piling
   // up of the popup windows.
 
   checkLocation(function (is) {
@@ -80,8 +119,8 @@
     }
   });
 
-  
+  Date.prototype.now = function () {
+     return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes() +":"+ ((this.getSeconds() < 10)?"0":"") + this.getSeconds();
+  }
 
 })();
-
-

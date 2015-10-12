@@ -36,4 +36,6 @@ Don't Worry, Safe for Work.
 
 [Eray Arslan](https://github.com/erayarslan)
 
-[Arda Kılıç](https://github.com/Ardakilic)
+[Arda Kılıçdağı](https://github.com/Ardakilic)
+
+[@srht](https://github.com/srht)

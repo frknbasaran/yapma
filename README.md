@@ -29,3 +29,7 @@ Aynı zamanda yarım saat içerisinde bu sitelerin anasayfasını 5'ten fazla ke
 Don't Worry, Safe for Work.
 
 [Chrome Web Store Bağlantısı](https://chrome.google.com/webstore/detail/kobdknbldcgchenddoejldigbdkholke)
+
+Contributors
+
+[Okan Vurdu](https://github.com/okanvurdu)

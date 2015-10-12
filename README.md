@@ -33,4 +33,5 @@ Don't Worry, Safe for Work.
 Contributors
 
 [Okan Vurdu](https://github.com/okanvurdu)
-[Eray Arslan](https://github.com/eryarslan)
+
+[Eray Arslan](https://github.com/erayarslan)

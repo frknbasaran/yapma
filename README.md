@@ -10,6 +10,8 @@ Aşağıdaki sitelerde 10 dakikadan fazla zaman geçirdiğiniz zaman sizi entere
   - eksisozluk.com
   - tweetdeck.twitter.com
 
+Aynı zamanda yarım saat içerisinde bu sitelerin anasayfasını 5'ten fazla kez görüntülerseniz, "şaaak!" diye uyarılıyorsunuz.
+
 5 dakika sonra
 
 ![Logo](http://oi60.tinypic.com/fjnk2w.jpg)
@@ -27,4 +29,3 @@ Aşağıdaki sitelerde 10 dakikadan fazla zaman geçirdiğiniz zaman sizi entere
 Don't Worry, Safe for Work.
 
 [Chrome Web Store Bağlantısı](https://chrome.google.com/webstore/detail/kobdknbldcgchenddoejldigbdkholke)
-

@@ -39,3 +39,8 @@ Don't Worry, Safe for Work.
 [Arda Kılıçdağı](https://github.com/Ardakilic)
 
 [@srht](https://github.com/srht)
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/frknbasaran/yapma/badge.svg?style=beer-square)](https://beerpay.io/frknbasaran/yapma)  [![Beerpay](https://beerpay.io/frknbasaran/yapma/make-wish.svg?style=flat-square)](https://beerpay.io/frknbasaran/yapma?focus=wish)
